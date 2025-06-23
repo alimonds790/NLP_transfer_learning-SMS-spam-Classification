@@ -130,18 +130,6 @@ The evaluation on the test set yielded the following results:
 -   **Recall (Spam):** 0.9463 (94.63%) - This is the ratio of correctly predicted spam messages (True Positives) to the total number of actual spam messages (True Positives + False Negatives). A high recall for spam means the model is effective at identifying most of the actual spam messages, minimizing the number of spam messages that slip through (false negatives).
 -   **F1-score (Spam):** 0.9400 (94.00%) - The F1-score is the harmonic mean of precision and recall. It provides a balanced measure of the model's performance on the spam class, especially useful when there is an uneven class distribution. A high F1-score indicates a good balance between precision and recall.
 
-### Confusion Matrix
-
-The confusion matrix provides a visual breakdown of the model's predictions versus the true labels on the test set:
-
-![Confusion Matrix (Fine-tuned DistilBERT)](./confusion_matrix_bert_finetuned.png)
-
--   **True Positives (TP):** Messages that are actually spam and were correctly predicted as spam. (Bottom Right)
--   **True Negatives (TN):** Messages that are actually ham and were correctly predicted as ham. (Top Left)
--   **False Positives (FP):** Messages that are actually ham but were incorrectly predicted as spam (Type I error). (Top Right)
--   **False Negatives (FN):** Messages that are actually spam but were incorrectly predicted as ham (Type II error). (Bottom Left)
-
-The confusion matrix shows a high number of True Positives and True Negatives, and relatively low numbers of False Positives and False Negatives, confirming the strong performance indicated by the other metrics.
 
 
 
